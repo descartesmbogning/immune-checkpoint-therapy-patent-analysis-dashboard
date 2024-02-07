@@ -8,7 +8,8 @@ import applicants_page
 import applicants_countries_page
 import jurisdiction_page
 
-# app = Dash(__name__, suppress_callback_exceptions=True)
+app = Dash(__name__, suppress_callback_exceptions=True)
+server = app.server
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
     # html.Div(id='page-content'),
